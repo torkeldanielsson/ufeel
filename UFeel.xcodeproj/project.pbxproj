@@ -13,6 +13,8 @@
 		C5201CF21B9ADD0100827D87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5201CF11B9ADD0100827D87 /* Images.xcassets */; };
 		C5201CF51B9ADD0100827D87 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5201CF31B9ADD0100827D87 /* LaunchScreen.xib */; };
 		C5201D011B9ADD0100827D87 /* UFeelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5201D001B9ADD0100827D87 /* UFeelTests.swift */; };
+		C574EB0F1B9AEF58005DFE56 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C574EB0E1B9AEF4F005DFE56 /* Charts.framework */; };
+		C574EB101B9AEF58005DFE56 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C574EB0E1B9AEF4F005DFE56 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +25,35 @@
 			remoteGlobalIDString = C5201CE41B9ADD0100827D87;
 			remoteInfo = UFeel;
 		};
+		C574EB0D1B9AEF4F005DFE56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C574EB091B9AEF4E005DFE56 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
+		C574EB111B9AEF58005DFE56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C574EB091B9AEF4E005DFE56 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C574EB131B9AEF59005DFE56 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C574EB101B9AEF58005DFE56 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C5201CE51B9ADD0100827D87 /* UFeel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UFeel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +66,7 @@
 		C5201CFA1B9ADD0100827D87 /* UFeelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UFeelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5201CFF1B9ADD0100827D87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5201D001B9ADD0100827D87 /* UFeelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFeelTests.swift; sourceTree = "<group>"; };
+		C574EB091B9AEF4E005DFE56 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../ios-charts-master/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C574EB0F1B9AEF58005DFE56 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +94,7 @@
 				C5201CE71B9ADD0100827D87 /* UFeel */,
 				C5201CFD1B9ADD0100827D87 /* UFeelTests */,
 				C5201CE61B9ADD0100827D87 /* Products */,
+				C574EB091B9AEF4E005DFE56 /* Charts.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +145,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C574EB0A1B9AEF4E005DFE56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C574EB0E1B9AEF4F005DFE56 /* Charts.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +163,12 @@
 				C5201CE11B9ADD0100827D87 /* Sources */,
 				C5201CE21B9ADD0100827D87 /* Frameworks */,
 				C5201CE31B9ADD0100827D87 /* Resources */,
+				C574EB131B9AEF59005DFE56 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C574EB121B9AEF58005DFE56 /* PBXTargetDependency */,
 			);
 			name = UFeel;
 			productName = UFeel;
@@ -179,6 +222,12 @@
 			mainGroup = C5201CDC1B9ADD0000827D87;
 			productRefGroup = C5201CE61B9ADD0100827D87 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C574EB0A1B9AEF4E005DFE56 /* Products */;
+					ProjectRef = C574EB091B9AEF4E005DFE56 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C5201CE41B9ADD0100827D87 /* UFeel */,
@@ -186,6 +235,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C574EB0E1B9AEF4F005DFE56 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = C574EB0D1B9AEF4F005DFE56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C5201CE31B9ADD0100827D87 /* Resources */ = {
@@ -232,6 +291,11 @@
 			isa = PBXTargetDependency;
 			target = C5201CE41B9ADD0100827D87 /* UFeel */;
 			targetProxy = C5201CFB1B9ADD0100827D87 /* PBXContainerItemProxy */;
+		};
+		C574EB121B9AEF58005DFE56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = C574EB111B9AEF58005DFE56 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -409,6 +473,7 @@
 				C5201D061B9ADD0100827D87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5201D071B9ADD0100827D87 /* Build configuration list for PBXNativeTarget "UFeelTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +482,7 @@
 				C5201D091B9ADD0100827D87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
