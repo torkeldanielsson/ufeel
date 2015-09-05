@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5201CEB1B9ADD0100827D87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5201CEA1B9ADD0100827D87 /* AppDelegate.swift */; };
+		C5201CED1B9ADD0100827D87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5201CEC1B9ADD0100827D87 /* ViewController.swift */; };
+		C5201CF01B9ADD0100827D87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5201CEE1B9ADD0100827D87 /* Main.storyboard */; };
+		C5201CF21B9ADD0100827D87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5201CF11B9ADD0100827D87 /* Images.xcassets */; };
+		C5201CF51B9ADD0100827D87 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5201CF31B9ADD0100827D87 /* LaunchScreen.xib */; };
+		C5201D011B9ADD0100827D87 /* UFeelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5201D001B9ADD0100827D87 /* UFeelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5201CFB1B9ADD0100827D87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5201CDD1B9ADD0000827D87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5201CE41B9ADD0100827D87;
+			remoteInfo = UFeel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C5201CE51B9ADD0100827D87 /* UFeel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UFeel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5201CE91B9ADD0100827D87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5201CEA1B9ADD0100827D87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5201CEC1B9ADD0100827D87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5201CEF1B9ADD0100827D87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5201CF11B9ADD0100827D87 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C5201CF41B9ADD0100827D87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C5201CFA1B9ADD0100827D87 /* UFeelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UFeelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5201CFF1B9ADD0100827D87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5201D001B9ADD0100827D87 /* UFeelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFeelTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5201CE21B9ADD0100827D87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5201CF71B9ADD0100827D87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5201CDC1B9ADD0000827D87 = {
+			isa = PBXGroup;
+			children = (
+				C5201CE71B9ADD0100827D87 /* UFeel */,
+				C5201CFD1B9ADD0100827D87 /* UFeelTests */,
+				C5201CE61B9ADD0100827D87 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5201CE61B9ADD0100827D87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5201CE51B9ADD0100827D87 /* UFeel.app */,
+				C5201CFA1B9ADD0100827D87 /* UFeelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5201CE71B9ADD0100827D87 /* UFeel */ = {
+			isa = PBXGroup;
+			children = (
+				C5201CEA1B9ADD0100827D87 /* AppDelegate.swift */,
+				C5201CEC1B9ADD0100827D87 /* ViewController.swift */,
+				C5201CEE1B9ADD0100827D87 /* Main.storyboard */,
+				C5201CF11B9ADD0100827D87 /* Images.xcassets */,
+				C5201CF31B9ADD0100827D87 /* LaunchScreen.xib */,
+				C5201CE81B9ADD0100827D87 /* Supporting Files */,
+			);
+			path = UFeel;
+			sourceTree = "<group>";
+		};
+		C5201CE81B9ADD0100827D87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5201CE91B9ADD0100827D87 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C5201CFD1B9ADD0100827D87 /* UFeelTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5201D001B9ADD0100827D87 /* UFeelTests.swift */,
+				C5201CFE1B9ADD0100827D87 /* Supporting Files */,
+			);
+			path = UFeelTests;
+			sourceTree = "<group>";
+		};
+		C5201CFE1B9ADD0100827D87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5201CFF1B9ADD0100827D87 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5201CE41B9ADD0100827D87 /* UFeel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5201D041B9ADD0100827D87 /* Build configuration list for PBXNativeTarget "UFeel" */;
+			buildPhases = (
+				C5201CE11B9ADD0100827D87 /* Sources */,
+				C5201CE21B9ADD0100827D87 /* Frameworks */,
+				C5201CE31B9ADD0100827D87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UFeel;
+			productName = UFeel;
+			productReference = C5201CE51B9ADD0100827D87 /* UFeel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5201CF91B9ADD0100827D87 /* UFeelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5201D071B9ADD0100827D87 /* Build configuration list for PBXNativeTarget "UFeelTests" */;
+			buildPhases = (
+				C5201CF61B9ADD0100827D87 /* Sources */,
+				C5201CF71B9ADD0100827D87 /* Frameworks */,
+				C5201CF81B9ADD0100827D87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5201CFC1B9ADD0100827D87 /* PBXTargetDependency */,
+			);
+			name = UFeelTests;
+			productName = UFeelTests;
+			productReference = C5201CFA1B9ADD0100827D87 /* UFeelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5201CDD1B9ADD0000827D87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Kodama AB";
+				TargetAttributes = {
+					C5201CE41B9ADD0100827D87 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					C5201CF91B9ADD0100827D87 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = C5201CE41B9ADD0100827D87;
+					};
+				};
+			};
+			buildConfigurationList = C5201CE01B9ADD0000827D87 /* Build configuration list for PBXProject "UFeel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5201CDC1B9ADD0000827D87;
+			productRefGroup = C5201CE61B9ADD0100827D87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5201CE41B9ADD0100827D87 /* UFeel */,
+				C5201CF91B9ADD0100827D87 /* UFeelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5201CE31B9ADD0100827D87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5201CF01B9ADD0100827D87 /* Main.storyboard in Resources */,
+				C5201CF51B9ADD0100827D87 /* LaunchScreen.xib in Resources */,
+				C5201CF21B9ADD0100827D87 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5201CF81B9ADD0100827D87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5201CE11B9ADD0100827D87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5201CED1B9ADD0100827D87 /* ViewController.swift in Sources */,
+				C5201CEB1B9ADD0100827D87 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5201CF61B9ADD0100827D87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5201D011B9ADD0100827D87 /* UFeelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5201CFC1B9ADD0100827D87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5201CE41B9ADD0100827D87 /* UFeel */;
+			targetProxy = C5201CFB1B9ADD0100827D87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C5201CEE1B9ADD0100827D87 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5201CEF1B9ADD0100827D87 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C5201CF31B9ADD0100827D87 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5201CF41B9ADD0100827D87 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5201D021B9ADD0100827D87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C5201D031B9ADD0100827D87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5201D051B9ADD0100827D87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UFeel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C5201D061B9ADD0100827D87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UFeel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C5201D081B9ADD0100827D87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UFeelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UFeel.app/UFeel";
+			};
+			name = Debug;
+		};
+		C5201D091B9ADD0100827D87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UFeelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UFeel.app/UFeel";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5201CE01B9ADD0000827D87 /* Build configuration list for PBXProject "UFeel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5201D021B9ADD0100827D87 /* Debug */,
+				C5201D031B9ADD0100827D87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5201D041B9ADD0100827D87 /* Build configuration list for PBXNativeTarget "UFeel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5201D051B9ADD0100827D87 /* Debug */,
+				C5201D061B9ADD0100827D87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C5201D071B9ADD0100827D87 /* Build configuration list for PBXNativeTarget "UFeelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5201D081B9ADD0100827D87 /* Debug */,
+				C5201D091B9ADD0100827D87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5201CDD1B9ADD0000827D87 /* Project object */;
+}
