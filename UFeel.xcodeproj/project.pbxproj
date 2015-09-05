@@ -16,6 +16,7 @@
 		C574EB0F1B9AEF58005DFE56 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C574EB0E1B9AEF4F005DFE56 /* Charts.framework */; };
 		C574EB101B9AEF58005DFE56 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C574EB0E1B9AEF4F005DFE56 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C5944FD31B9B31FD003A0E29 /* uFLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C5944FD21B9B31FD003A0E29 /* uFLogo.png */; };
+		C5944FE41B9B7D19003A0E29 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5944FE31B9B7D18003A0E29 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		C5201D001B9ADD0100827D87 /* UFeelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFeelTests.swift; sourceTree = "<group>"; };
 		C574EB091B9AEF4E005DFE56 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../ios-charts-master/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
 		C5944FD21B9B31FD003A0E29 /* uFLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uFLogo.png; sourceTree = "<group>"; };
+		C5944FE31B9B7D18003A0E29 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = "../../../Downloads/SwiftyJSON-master-2/Source/SwiftyJSON.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				C5944FD21B9B31FD003A0E29 /* uFLogo.png */,
+				C5944FE31B9B7D18003A0E29 /* SwiftyJSON.swift */,
 				C5201CEA1B9ADD0100827D87 /* AppDelegate.swift */,
 				C5201CEC1B9ADD0100827D87 /* ViewController.swift */,
 				C5201CEE1B9ADD0100827D87 /* Main.storyboard */,
@@ -275,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5944FE41B9B7D19003A0E29 /* SwiftyJSON.swift in Sources */,
 				C5201CED1B9ADD0100827D87 /* ViewController.swift in Sources */,
 				C5201CEB1B9ADD0100827D87 /* AppDelegate.swift in Sources */,
 			);

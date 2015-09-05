@@ -10,6 +10,7 @@ import UIKit
 import Charts
 import Darwin
 
+
 struct DataPoint {
     let movement: Double
     let time: Double
@@ -40,6 +41,24 @@ class ViewController: UIViewController {
         self.nights = [NightData]()
     }
     
+    func jsonTest(){
+        var urlString = "http://api.offentligdata.minavardkontakter.se/orgmaster-hsa/v1/hsaObjects/"
+        
+        if let url = NSURL(string: urlString) {
+            if let data = NSData(contentsOfURL: url, options: .allZeros, error: nil) {
+                let json = JSON(data: data)
+                
+                if let mystring = json[0]["type"].string {
+                    // we're OK to parse!
+                    println("ok!!! "+mystring)
+                } else {
+                    println("not ok")
+                }
+            }
+        }
+
+    }
+    
     required init(coder: NSCoder) {
         self.nights = [NightData]()
 
@@ -48,6 +67,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        jsonTest()
         
         // Create logo view
         imageView = UIImageView(image: UIImage(named: "uFLogo.png"))
