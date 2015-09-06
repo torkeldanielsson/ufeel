@@ -9,7 +9,6 @@
 import UIKit
 import Charts
 import Darwin
-import Foundation
 import CoreLocation
 
 
@@ -31,80 +30,19 @@ class NightData {
     var dataPoints: [DataPoint]
 }
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UIViewController {
 
     var scrollView: UIScrollView!
     var imageView: UIImageView!
     var lineChartView: LineChartView!
     var nights: [NightData]
     
-    var locationManager: CLLocationManager = CLLocationManager()
-    
     convenience init() {
         self.init()
         self.nights = [NightData]()
     }
     
-    func getGeoPos() {
-        println("in getGeoPos...1")
-
-        locationManager.requestAlwaysAuthorization()
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.startUpdatingLocation()
-        locationManager.startMonitoringSignificantLocationChanges()
-    }
-    
-    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
-        println("Error while updating location " + error.localizedDescription)
-    }
-
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-        println("in locationManager...")
-        CLGeocoder().reverseGeocodeLocation(manager.location, completionHandler: {(placemarks, error)->Void in
-            if (error != nil) {
-                println("Reverse geocoder failed with error" + error.localizedDescription)
-                return
-            }
-            
-            if placemarks.count > 0 {
-                let pm = placemarks[0] as! CLPlacemark
-                self.displayLocationInfo(pm)
-            } else {
-                println("Problem with the data received from geocoder")
-            }
-        })
-    }
-    
-    func displayLocationInfo(placemark: CLPlacemark) {
-            //stop updating location to save battery life
-            //locationManager.stopUpdatingLocation()
-            println(placemark.locality)
-            println(placemark.postalCode)
-            println(placemark.administrativeArea)
-            println(placemark.country)
-    }
-    
-    func addToListIfClose(latitude: Double, longitude: Double, address: [String]) {
-        
-    }
-    
-    func parseHPA_JSON(json: JSON) {
-        for result in json.arrayValue {
-            let geoLocation_lat_str = result["geoLocation"]["latitude"].stringValue
-            let geoLocation_lon_str = result["geoLocation"]["longitude"].stringValue
-            let address: [String] = [result["postalAddress"][0].stringValue,
-                                     result["postalAddress"][1].stringValue,
-                                     result["postalAddress"][2].stringValue]
-            let geoLocation_lat = (geoLocation_lat_str as NSString).doubleValue
-            let geoLocation_lon = (geoLocation_lon_str as NSString).doubleValue
-            addToListIfClose(geoLocation_lat, longitude: geoLocation_lon, address: address)
-        }
-    }
-    
-    func getHPA_JSON(){
-        println("Reading JSON: Vårdkontakter...")
-        
+    func jsonTest(){
         var urlString = "http://api.offentligdata.minavardkontakter.se/orgmaster-hsa/v1/hsaObjects/"
         
         if let url = NSURL(string: urlString) {
@@ -112,7 +50,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 let json = JSON(data: data)
                 
                 if let mystring = json[0]["type"].string {
-                    //parseHPA_JSON(json)
+                    // we're OK to parse!
+                    println("ok!!! "+mystring)
                 } else {
                     println("not ok")
                 }
@@ -130,9 +69,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getGeoPos()
-        
-        //getHPA_JSON()
+        jsonTest()
         
         // Create logo view
         imageView = UIImageView(image: UIImage(named: "uFLogo.png"))

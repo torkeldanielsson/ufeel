@@ -17,6 +17,7 @@
 		C574EB101B9AEF58005DFE56 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C574EB0E1B9AEF4F005DFE56 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C5944FD31B9B31FD003A0E29 /* uFLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C5944FD21B9B31FD003A0E29 /* uFLogo.png */; };
 		C5944FE41B9B7D19003A0E29 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5944FE31B9B7D18003A0E29 /* SwiftyJSON.swift */; };
+		C5944FE61B9C220E003A0E29 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5944FE51B9C220E003A0E29 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		C574EB091B9AEF4E005DFE56 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../ios-charts-master/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
 		C5944FD21B9B31FD003A0E29 /* uFLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uFLogo.png; sourceTree = "<group>"; };
 		C5944FE31B9B7D18003A0E29 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = "../../../Downloads/SwiftyJSON-master-2/Source/SwiftyJSON.swift"; sourceTree = "<group>"; };
+		C5944FE51B9C220E003A0E29 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5944FE61B9C220E003A0E29 /* CoreLocation.framework in Frameworks */,
 				C574EB0F1B9AEF58005DFE56 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +98,7 @@
 		C5201CDC1B9ADD0000827D87 = {
 			isa = PBXGroup;
 			children = (
+				C5944FE51B9C220E003A0E29 /* CoreLocation.framework */,
 				C5201CE71B9ADD0100827D87 /* UFeel */,
 				C5201CFD1B9ADD0100827D87 /* UFeelTests */,
 				C5201CE61B9ADD0100827D87 /* Products */,
